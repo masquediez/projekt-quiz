@@ -12,7 +12,7 @@ AppRouter.use("/users", authMiddleWare, UserRouter);
 AppRouter.use("/todos", TodosRouter);
 AppRouter.get("/test", (req, res) => {
   logger.debug("Hola Mundo");
-  res.json({ myLogLevel: "info" });
+  res.json({ myLogLevel: "debug" });
 });
 
 module.exports = { AppRouter };
